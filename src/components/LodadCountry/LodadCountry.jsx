@@ -18,15 +18,14 @@ const LodadCountry = () => {
             <div className='countryContainer'>
                 {
                     countrys.map(country => {
-                        const name = country.name.common
                         return (
-                            <Country name={name}></Country>
+                            <Country country={country} key={country.cca3}></Country>
                         )
                     })
                 }
             </div>
         </div>
-    )
+    );
 };
 
 export default LodadCountry;

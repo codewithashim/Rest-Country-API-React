@@ -4,11 +4,34 @@
     box-sizing: border-box;
 }
 
-
 .countryList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: 2px solid black;
     width: 23rem;
+    height: auto;
+    background: rgba(127, 255, 212, 0.475);
     margin: 1rem;
     padding: 1rem;
     border-radius: 0.6rem;
+}
+
+.flagsImg img {
+    width: 21rem;
+    height: 13rem;
+    border-radius: 0.5rem;
+}
+
+.texContain {
+    padding: 0.5rem;
+    width: 22rem;
+    text-align: left;
+}
+
+.timeZone {
+    font-size: 9px;
+    height: auto;
+    width: 60px !important;
 }
