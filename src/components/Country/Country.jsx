@@ -1,4 +1,5 @@
 import React from 'react'
+import './Country.css'
 
 function Country(props) {
     const name = props.name;
@@ -10,7 +11,7 @@ function Country(props) {
     const region = props.region
 
     return (
-        <section id='countryContainer'>
+        <section className='countryContainer'>
             <div className="countryList">
                 <div className='flagsImg'>
                     <img src={flags} alt="" />

@@ -1,4 +1,5 @@
 import React from 'react';
+import './LoadCountry.css';
 import { useEffect, useState } from 'react';
 import Country from './../Country/Country';
 
@@ -14,14 +15,16 @@ const LodadCountry = () => {
     return (
         <div>
             <h3>Availabel Country : <span>{countrys.length}</span> </h3>
-            {
-                countrys.map(country => {
-                    const name = country.name.common
-                    return (
-                        <Country name={name}></Country>
-                    )
-                })
-            }
+            <div className='countryContainer'>
+                {
+                    countrys.map(country => {
+                        const name = country.name.common
+                        return (
+                            <Country name={name}></Country>
+                        )
+                    })
+                }
+            </div>
         </div>
     )
 };

@@ -1,0 +1,6 @@
+.countryContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    justify-content: center;
+    align-items: center;
+}

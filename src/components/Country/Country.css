@@ -4,3 +4,11 @@
     box-sizing: border-box;
 }
 
+
+.countryList {
+    border: 2px solid black;
+    width: 23rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 0.6rem;
+}
